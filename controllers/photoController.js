@@ -1,4 +1,4 @@
-const Photos = require("../lib/flikrPhotos");
+const Photos = require("../lib/flikrPhotosApi");
 
 class PhotosController {
     static getPhotoData(req, res) {
