@@ -12,5 +12,9 @@ class PhotosController {
                 res.status(400).send(err);
             });
     }
+
+    static showPhotos(req, res) {
+        res.render("showPhotos");
+    }
 }
 module.exports = PhotosController;

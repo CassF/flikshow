@@ -1,7 +1,6 @@
-class Index {
+class IndexController {
     static showIndex(req,res){
         res.render("index");
     }
 }
-
-module.exports = Index;
+module.exports = IndexController;

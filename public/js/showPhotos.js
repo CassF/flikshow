@@ -1,17 +1,23 @@
 // $(() => {
-//     $.ajax({
-//         url: '/',
+
+//     $("#searchFlikr").click((e) => {
+//         e.preventDefault();
+//         // let search = $("#searchBar").val();
+//         $.ajax({
+//             url: `/search`,
 //             method: 'POST',
 //             data:{
-//                 irish: "Cass"
+//                 search: $("#searchBar").val()
 //             }
 //         })
-//         .then((data) =>  {
+//             .then((data) => {
 //             let theData = data.result;
-//             $("#putShitHere").append(`<h2>${data.irish}</h2>`);
-//             for (let i in  theData){
-//                 console.log(theData[i]);
-//                 $("#putShitHere").append(`<p>${theData[i].title}</p>`);
-//             }
+//             $("#putShitHere").append(`<h2>${data.search}</h2>`);
+
+
+//             });
 //     });
 // });
+
+
+
