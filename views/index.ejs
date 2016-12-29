@@ -16,13 +16,24 @@
 
 <body>
 
-    <section id="deleteBlogpost" class="section scrollspy">
+    <!--<section id="deleteBlogpost" class="section scrollspy">
         <div>
-            <h4 class="inputHeading"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i> Delete a blogpost</h4>
+            <h4 class="inputHeading"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i> Search for photos</h4>
             <input class="submissionfield col s6" type="search" id="searchBar">
-            <button href ="/search" class="btn waves-effect waves-light" id="searchFlikr">Search</button>
+            <button class="btn waves-effect waves-light" id="searchFlikr">Search</button>
         </div>
-    </section>
+    </section>-->
+
+    <div id="search">
+        <input id="searchBar" type="text" name="search" placeholder="Search.." style="width: 200px; height: 30px">
+        <button id="searchFlikr" class="btn waves-effect waves-light" type="submit" name="action"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+    </div>
+<!--end of seaerch bar and button -->
+<!-- map -->
+<div class="container" id="map"></div>
+<!-- end of map -->
 </body>
 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4s3E3n0hQdLrXuHa-wFG9ezc2Zr2mqfk"></script>
+<script src="js/showPhotos.js"></script>
 </html>
