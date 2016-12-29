@@ -13,32 +13,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <title>title</title>
 </head>
-    <style>
-      #map {
+<style>
+    #map {
         height: 400px;
         width: 100%;
-       }
-    </style>
+    }
+</style>
+
 <body>
 
-    <!--<section id="deleteBlogpost" class="section scrollspy">
-        <div>
-            <h4 class="inputHeading"><i class="fa fa-trash-o fa-lg" aria-hidden="true"></i> Search for photos</h4>
-            <input class="submissionfield col s6" type="search" id="searchBar">
-            <button class="btn waves-effect waves-light" id="searchFlikr">Search</button>
+    <section>
+        <div id="search">
+            <input id="searchBar" type="text" name="search" placeholder="Search.." style="width: 200px; height: 30px">
+            <button id="searchFlikr" class="btn waves-effect waves-light" type="submit" name="action"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
         </div>
-    </section>-->
-
-    <div id="search">
-        <input id="searchBar" type="text" name="search" placeholder="Search.." style="width: 200px; height: 30px">
-        <button id="searchFlikr" class="btn waves-effect waves-light" type="submit" name="action"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+    </section>
+    <!-- End of search section -->
+    <!-- Start of map -->
+    <div class="container" id="map">
     </div>
-<!--end of seaerch bar and button -->
-<!-- map -->
-<div class="container" id="map"></div>
-<!-- end of map -->
+    <!-- End of map -->
 </body>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4s3E3n0hQdLrXuHa-wFG9ezc2Zr2mqfk"></script>
 <script src="js/showPhotos.js"></script>
+
 </html>

@@ -1,6 +1,7 @@
 class IndexController {
     static showIndex(req,res){
         res.render("index");
+        
     }
 
          static showPhotos(req, res) {
