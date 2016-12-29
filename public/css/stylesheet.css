@@ -1,0 +1,25 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|News+Cycle');
+
+@font-face { 
+    font-family: 'Coolvetica'; 
+    src: url('../fonts/coolvetica/coolvetica.ttf'); 
+ } 
+html {
+    background: #F8F8F9;
+}
+ h1 {
+     font-family: 'Coolvetica';
+     font-size:1000%;
+     color: #FF0084;
+     text-align: center;
+ }
+     #map {
+        height: 400px;
+        width: 100%;
+    }
+
+
+.btn:hover {
+    background-color: #2bbbad;
+}
