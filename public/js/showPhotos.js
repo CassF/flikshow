@@ -19,8 +19,8 @@ $(() => {
         console.log(data);
         let markers = [];
         //centers the map to a specific location
-        // var uluru = { lat: 51.643173, lng: 0.050168 };
-        var uluru = {lat: -25.363, lng: 131.044};
+        var uluru = { lat: 51.643173, lng: 0.050168 };
+        // var uluru = {lat: -25.363, lng: 131.044};
         map = new google.maps.Map(document.getElementById('map'), {
             zoom: 3,
             center: uluru
@@ -33,19 +33,19 @@ $(() => {
             console.log(markerData[i].longitude);
             var pos = new google.maps.LatLng(markerData[i].latitude, markerData[i].longitude);
             //When function is called pass in the image URL
-            createMarker(pos, markerData[i].title, markerData[i].url_c);
+            createMarker(pos, markerData[i].title, markerData[i].url_m);
         }
     }
 
     //passing the photo image URL in this function
-    function createMarker(pos, t, url_c) {
+    function createMarker(pos, t, url_m) {
         var marker = new google.maps.Marker({
             position: pos,
             map: map,
             title: t
         });
 
-        let contentString = `<img src="${url_c}" />`;
+        let contentString = `<img src="${url_m}" />`;
 
         let infowindow = new google.maps.InfoWindow({
             content: contentString
