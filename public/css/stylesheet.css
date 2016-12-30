@@ -9,6 +9,15 @@
     font-family: 'Quicksand'; 
     src: url('../fonts/quicksand/Quicksand_Bold.otf'); 
  }
+   body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
 html {
     background: #F8F8F9;
 }
@@ -36,7 +45,7 @@ input[type=url], input[type=time], input[type=date],
 input[type=datetime], input[type=datetime-local], 
 input[type=tel], input[type=number], 
 input[type=search], textarea.materialize-textarea {
-        border-bottom: 2px solid #FF0084 !important;
+    border-bottom: 2px solid #FF0084 !important;
 
 }
 input:not([type]):focus:not([readonly]),
@@ -53,7 +62,6 @@ input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
     border-bottom: 2px solid blue !important;
-    /*box-shadow: 0 1px 0 0 #EBDDE2 !important;*/
 }
 /* END OF SEARCH BAR */
 
@@ -80,7 +88,10 @@ footer.page-footer {
     height: 100%;
     font-family: 'Quicksand'; 
 }
-.page-footer {
-    width: 100%;
+.createdBy {
+    text-align: right;
 }
+/*.page-footer {
+    width: 100%;
+}*/
 /* END OF FOOTER */
